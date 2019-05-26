@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS people;
+
+CREATE TABLE people (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+);
+
+INSERT INTO people (name) VALUES
+  ('Yudi');
