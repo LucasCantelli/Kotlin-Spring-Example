@@ -1,9 +1,8 @@
 package com.example.kotlinspring.equipe
 
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import javax.persistence.*
 
+@Entity
 data class Equipe (
         @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long,

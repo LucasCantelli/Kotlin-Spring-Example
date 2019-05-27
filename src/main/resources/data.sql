@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS people;
+DROP TABLE IF EXISTS equipe;
 
 CREATE TABLE people (
   id INT AUTO_INCREMENT  PRIMARY KEY,
@@ -11,8 +12,18 @@ CREATE TABLE people (
   email VARCHAR(250),
   rg VARCHAR(250),
   cargo VARCHAR(250),
-  endereco VARCHAR(250)
+  endereco VARCHAR(250),
+  equipe_id INT
 );
 
-INSERT INTO people (nome) VALUES
-  ('Yudi');
+CREATE TABLE equipe (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  nome VARCHAR(250),
+  people_id INT
+);
+
+INSERT INTO equipe (nome) VALUES
+  ('Shield');
+
+INSERT INTO people (nome, equipe_id) VALUES
+  ('Yudi', 1);

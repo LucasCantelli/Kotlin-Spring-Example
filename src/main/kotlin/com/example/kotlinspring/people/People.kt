@@ -28,6 +28,7 @@ data class People (
 
         val endereco: String = "",
 
-        @OneToMany
-        val equipe: List<Equipe>
+        @OneToOne
+        @JoinColumn(name = "equipe_id", referencedColumnName = "id")
+        val equipe: Equipe
 )
