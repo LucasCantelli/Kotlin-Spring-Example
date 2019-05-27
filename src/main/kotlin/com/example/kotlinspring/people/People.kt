@@ -10,5 +10,26 @@ data class People (
         @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long,
 
-        val name: String = ""
+        val nome: String = "",
+
+        val idade: String = "",
+
+        val sexo: String = "",
+
+        val usuario: String = "",
+
+        val senha: String = "",
+
+        val cpf: String = "",
+
+        val email: String = "",
+
+        val rg: String = "",
+
+        val cargo: String = "",
+
+        val endereco: String = ""
+
+        //TODO
+        //val equipe: Equipe = ""
 )
