@@ -1,9 +1,7 @@
 package com.example.kotlinspring.people
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import com.example.kotlinspring.equipe.Equipe
+import javax.persistence.*
 
 @Entity
 data class People (
@@ -28,8 +26,8 @@ data class People (
 
         val cargo: String = "",
 
-        val endereco: String = ""
+        val endereco: String = "",
 
-        //TODO
-        //val equipe: Equipe = ""
+        @OneToMany
+        val equipe: List<Equipe>
 )

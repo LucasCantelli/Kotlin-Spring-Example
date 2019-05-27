@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RestController
 class PeopleAPI(private val peopleRepository: PeopleRepository) {
     @GetMapping("/people")
     fun getPeople(): List<People> =
-            peopleRepository.findAll();
+            peopleRepository.findAll()
 }
