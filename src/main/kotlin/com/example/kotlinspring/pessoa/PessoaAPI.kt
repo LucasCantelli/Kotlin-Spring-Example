@@ -1,4 +1,4 @@
-package com.example.kotlinspring.people
+package com.example.kotlinspring.pessoa
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api")
-class PeopleAPI(private val peopleRepository: PeopleRepository) {
-    @GetMapping("/people")
-    fun getPeople(): List<People> =
-            peopleRepository.findAll()
+class PessoaAPI(private val pessoaRepository: PessoaRepository) {
+    @GetMapping("/pessoa")
+    fun getPessoa(): List<Pessoa> =
+            pessoaRepository.findAll()
 }

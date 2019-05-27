@@ -1,10 +1,10 @@
-package com.example.kotlinspring.people
+package com.example.kotlinspring.pessoa
 
 import com.example.kotlinspring.equipe.Equipe
 import javax.persistence.*
 
 @Entity
-data class People (
+data class Pessoa (
         @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long,
 

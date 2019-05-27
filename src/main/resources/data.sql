@@ -1,7 +1,7 @@
-DROP TABLE IF EXISTS people;
+DROP TABLE IF EXISTS pessoa;
 DROP TABLE IF EXISTS equipe;
 
-CREATE TABLE people (
+CREATE TABLE pessoa (
   id INT AUTO_INCREMENT  PRIMARY KEY,
   nome VARCHAR(250),
   idade VARCHAR(250),
@@ -19,11 +19,11 @@ CREATE TABLE people (
 CREATE TABLE equipe (
   id INT AUTO_INCREMENT  PRIMARY KEY,
   nome VARCHAR(250),
-  people_id INT
+  pessoa_id INT
 );
 
 INSERT INTO equipe (nome) VALUES
   ('Shield');
 
-INSERT INTO people (nome, equipe_id) VALUES
+INSERT INTO pessoa (nome, equipe_id) VALUES
   ('Yudi', 1);
